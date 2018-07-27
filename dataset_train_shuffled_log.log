@@ -1,0 +1,1030 @@
+2018-07-19 16:22:33,782 INFO     [root/vw-hyperopt:259]: loading true holdout class labels...
+2018-07-19 16:22:53,239 INFO     [root/vw-hyperopt:266]: holdout length: 2583440
+2018-07-19 16:22:53,240 DEBUG    [root/vw-hyperopt:334]: starting hypersearch...
+2018-07-19 16:22:53,269 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009999 seconds
+2018-07-19 16:22:53,269 INFO     [hyperopt.tpe/tpe:844]: TPE using 0 trials
+2018-07-19 16:22:53,274 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.1
+2018-07-19 16:22:53,275 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.2 --loss_function logistic --ngram c4 --passes 8 --power_t 0.10403348057842145 -b 28 -l 0.22796188674514783 
+2018-07-19 16:27:09,744 INFO     [root/vw-hyperopt:259]: loading true holdout class labels...
+2018-07-19 16:27:28,724 INFO     [root/vw-hyperopt:266]: holdout length: 2583440
+2018-07-19 16:27:28,725 DEBUG    [root/vw-hyperopt:334]: starting hypersearch...
+2018-07-19 16:27:28,754 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 16:27:28,756 INFO     [hyperopt.tpe/tpe:844]: TPE using 0 trials
+2018-07-19 16:27:28,760 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.1
+2018-07-19 16:27:28,762 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.1 --ftrl_alpha 0.2876190225888076 --ftrl_beta 0.583898236116813 --l1 1.7403433224014588e-08 --l2 7.111738926184657e-05 --loss_function logistic --ngram c2 --passes 8 --power_t 0.8286994693149228 -b 28 -l 0.017572553086718932 --ftrl
+2018-07-19 16:29:49,945 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 16:30:04,744 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.1 --ftrl_alpha 0.2876190225888076 --ftrl_beta 0.583898236116813 --l1 1.7403433224014588e-08 --l2 7.111738926184657e-05 --loss_function logistic --ngram c2 --passes 8 --power_t 0.8286994693149228 -b 28 -l 0.017572553086718932 --ftrl
+2018-07-19 16:30:08,934 INFO     [root/vw-hyperopt:296]: loss value: -0.548379
+2018-07-19 16:30:09,001 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:40.241000
+2018-07-19 16:30:09,102 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 16:30:09,103 INFO     [hyperopt.tpe/tpe:842]: TPE using 1/1 trials with best loss -0.548379
+2018-07-19 16:30:09,108 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.2
+2018-07-19 16:30:09,110 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.02 --decay_learning_rate 0.97 --ftrl_alpha 0.0003156171142847032 --ftrl_beta 0.3164933018933227 --l2 3.4150056889547415e-06 --loss_function logistic --ngram c4 --passes 3 --power_t 0.18802215272870884 -b 28 -l 0.01997585597664341 --ftrl
+2018-07-19 16:31:46,254 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 16:32:00,756 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.02 --decay_learning_rate 0.97 --ftrl_alpha 0.0003156171142847032 --ftrl_beta 0.3164933018933227 --l2 3.4150056889547415e-06 --loss_function logistic --ngram c4 --passes 3 --power_t 0.18802215272870884 -b 28 -l 0.01997585597664341 --ftrl
+2018-07-19 16:32:00,757 INFO     [root/vw-hyperopt:296]: loss value: -0.541943
+2018-07-19 16:32:00,805 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:01:51.697000
+2018-07-19 16:32:00,846 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 16:32:00,847 INFO     [hyperopt.tpe/tpe:842]: TPE using 2/2 trials with best loss -0.548379
+2018-07-19 16:32:00,851 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.3
+2018-07-19 16:32:00,852 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --ftrl_alpha 0.022740108767017753 --ftrl_beta 0.4752944475143615 --l1 6.032113018829296e-08 --loss_function logistic --ngram c4 --passes 4 --power_t 0.05582634968402449 -b 28 -l 0.34984279135140767 --ftrl
+2018-07-19 16:33:28,260 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 16:33:42,712 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --ftrl_alpha 0.022740108767017753 --ftrl_beta 0.4752944475143615 --l1 6.032113018829296e-08 --loss_function logistic --ngram c4 --passes 4 --power_t 0.05582634968402449 -b 28 -l 0.34984279135140767 --ftrl
+2018-07-19 16:33:42,714 INFO     [root/vw-hyperopt:296]: loss value: -0.568512
+2018-07-19 16:33:42,761 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:01:41.910000
+2018-07-19 16:33:42,835 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 16:33:42,836 INFO     [hyperopt.tpe/tpe:842]: TPE using 3/3 trials with best loss -0.568512
+2018-07-19 16:33:42,841 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.4
+2018-07-19 16:33:42,843 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --l1 0.0013545437523239685 --loss_function logistic --ngram c4 --passes 4 --power_t 0.8258700427151362 -b 28 -l 0.26303465006007215 
+2018-07-19 16:35:55,708 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 16:36:08,102 INFO     [root/vw-hyperopt:295]: parameter suffix: --l1 0.0013545437523239685 --loss_function logistic --ngram c4 --passes 4 --power_t 0.8258700427151362 -b 28 -l 0.26303465006007215 
+2018-07-19 16:36:08,104 INFO     [root/vw-hyperopt:296]: loss value: -0.500000
+2018-07-19 16:36:08,151 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:25.310000
+2018-07-19 16:36:08,327 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 16:36:08,328 INFO     [hyperopt.tpe/tpe:842]: TPE using 4/4 trials with best loss -0.568512
+2018-07-19 16:36:08,333 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.5
+2018-07-19 16:36:08,334 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --l1 1.582590733070878e-06 --l2 0.00603818746125023 --loss_function logistic --ngram c2 --passes 5 --power_t 0.5572514910304932 -b 28 -l 0.06725392388066517 
+2018-07-19 16:46:37,398 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 16:46:51,266 INFO     [root/vw-hyperopt:295]: parameter suffix: --l1 1.582590733070878e-06 --l2 0.00603818746125023 --loss_function logistic --ngram c2 --passes 5 --power_t 0.5572514910304932 -b 28 -l 0.06725392388066517 
+2018-07-19 16:46:51,268 INFO     [root/vw-hyperopt:296]: loss value: -0.518761
+2018-07-19 16:46:51,316 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:10:42.983000
+2018-07-19 16:46:51,412 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 16:46:51,413 INFO     [hyperopt.tpe/tpe:842]: TPE using 5/5 trials with best loss -0.568512
+2018-07-19 16:46:51,418 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.6
+2018-07-19 16:46:51,419 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 6 --power_t 0.405649564225542 -b 28 -l 0.02768354442744159 
+2018-07-19 16:50:10,941 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 16:50:24,039 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 6 --power_t 0.405649564225542 -b 28 -l 0.02768354442744159 
+2018-07-19 16:50:24,040 INFO     [root/vw-hyperopt:296]: loss value: -0.586878
+2018-07-19 16:50:24,088 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:32.670000
+2018-07-19 16:50:24,168 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 16:50:24,169 INFO     [hyperopt.tpe/tpe:842]: TPE using 6/6 trials with best loss -0.586878
+2018-07-19 16:50:24,173 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.7
+2018-07-19 16:50:24,174 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.05 --l1 5.0678943226167675e-05 --l2 0.0006871568110834622 --loss_function logistic --ngram c4 --passes 10 --power_t 0.6787173259063891 -b 28 -l 0.2774333089319663 
+2018-07-19 16:56:53,824 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 16:57:06,559 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.05 --l1 5.0678943226167675e-05 --l2 0.0006871568110834622 --loss_function logistic --ngram c4 --passes 10 --power_t 0.6787173259063891 -b 28 -l 0.2774333089319663 
+2018-07-19 16:57:06,560 INFO     [root/vw-hyperopt:296]: loss value: -0.518151
+2018-07-19 16:57:06,619 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:06:42.446000
+2018-07-19 16:57:06,694 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 16:57:06,694 INFO     [hyperopt.tpe/tpe:842]: TPE using 7/7 trials with best loss -0.586878
+2018-07-19 16:57:06,698 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.8
+2018-07-19 16:57:06,699 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.5 --decay_learning_rate 0.95 --l1 3.09365337847231e-08 --loss_function logistic --ngram c4 --passes 6 --power_t 0.551094007676805 -b 28 -l 0.010931018260341537 
+2018-07-19 17:00:35,083 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:00:47,677 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.5 --decay_learning_rate 0.95 --l1 3.09365337847231e-08 --loss_function logistic --ngram c4 --passes 6 --power_t 0.551094007676805 -b 28 -l 0.010931018260341537 
+2018-07-19 17:00:47,678 INFO     [root/vw-hyperopt:296]: loss value: -0.561111
+2018-07-19 17:00:47,725 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:41.027000
+2018-07-19 17:00:47,795 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 17:00:47,796 INFO     [hyperopt.tpe/tpe:842]: TPE using 8/8 trials with best loss -0.586878
+2018-07-19 17:00:47,799 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.9
+2018-07-19 17:00:47,800 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --l1 0.0017574613398887572 --loss_function logistic --ngram c3 --passes 9 --power_t 0.12642074973309927 -b 28 -l 0.49428591242387127 
+2018-07-19 17:05:37,976 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:05:50,411 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --l1 0.0017574613398887572 --loss_function logistic --ngram c3 --passes 9 --power_t 0.12642074973309927 -b 28 -l 0.49428591242387127 
+2018-07-19 17:05:50,411 INFO     [root/vw-hyperopt:296]: loss value: -0.500000
+2018-07-19 17:05:50,458 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:02.659000
+2018-07-19 17:05:50,818 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 17:05:50,819 INFO     [hyperopt.tpe/tpe:842]: TPE using 9/9 trials with best loss -0.586878
+2018-07-19 17:05:50,822 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.10
+2018-07-19 17:05:50,823 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --l1 2.989159918034766e-05 --l2 0.00038500496616638625 --loss_function logistic --ngram c4 --passes 4 --power_t 0.10340194184401018 -b 28 -l 0.19341064390259585 
+2018-07-19 17:09:07,713 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:09:20,478 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --l1 2.989159918034766e-05 --l2 0.00038500496616638625 --loss_function logistic --ngram c4 --passes 4 --power_t 0.10340194184401018 -b 28 -l 0.19341064390259585 
+2018-07-19 17:09:20,478 INFO     [root/vw-hyperopt:296]: loss value: -0.533308
+2018-07-19 17:09:20,526 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:29.704000
+2018-07-19 17:09:20,741 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 17:09:20,742 INFO     [hyperopt.tpe/tpe:842]: TPE using 10/10 trials with best loss -0.586878
+2018-07-19 17:09:20,745 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.11
+2018-07-19 17:09:20,746 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --ftrl_alpha 0.003955691981639907 --ftrl_beta 0.22330546070428198 --loss_function logistic --ngram c2 --passes 3 --power_t 0.9031042107193625 -b 28 -l 0.15307185522851788 --ftrl
+2018-07-19 17:10:22,833 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:10:35,451 INFO     [root/vw-hyperopt:295]: parameter suffix: --ftrl_alpha 0.003955691981639907 --ftrl_beta 0.22330546070428198 --loss_function logistic --ngram c2 --passes 3 --power_t 0.9031042107193625 -b 28 -l 0.15307185522851788 --ftrl
+2018-07-19 17:10:35,452 INFO     [root/vw-hyperopt:296]: loss value: -0.568758
+2018-07-19 17:10:35,499 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:01:14.754000
+2018-07-19 17:10:35,563 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 17:10:35,563 INFO     [hyperopt.tpe/tpe:842]: TPE using 11/11 trials with best loss -0.586878
+2018-07-19 17:10:35,567 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.12
+2018-07-19 17:10:35,567 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --ftrl_alpha 0.0007065532505484619 --ftrl_beta 0.46336112409017705 --l1 0.001473553618523203 --l2 0.00012808619846125022 --loss_function logistic --ngram c4 --passes 7 --power_t 0.3862584178358551 -b 28 -l 0.017266074133523004 --ftrl
+2018-07-19 17:13:03,976 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:13:16,827 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --ftrl_alpha 0.0007065532505484619 --ftrl_beta 0.46336112409017705 --l1 0.001473553618523203 --l2 0.00012808619846125022 --loss_function logistic --ngram c4 --passes 7 --power_t 0.3862584178358551 -b 28 -l 0.017266074133523004 --ftrl
+2018-07-19 17:13:16,828 INFO     [root/vw-hyperopt:296]: loss value: -0.557782
+2018-07-19 17:13:16,875 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:41.308000
+2018-07-19 17:13:16,992 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.050000 seconds
+2018-07-19 17:13:16,993 INFO     [hyperopt.tpe/tpe:842]: TPE using 12/12 trials with best loss -0.586878
+2018-07-19 17:13:16,997 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.13
+2018-07-19 17:13:16,997 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --l2 0.0007693089092783241 --loss_function logistic --ngram c2 --passes 5 --power_t 0.6070914960375023 -b 28 -l 0.5708912660500872 
+2018-07-19 17:23:16,356 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:23:28,936 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --l2 0.0007693089092783241 --loss_function logistic --ngram c2 --passes 5 --power_t 0.6070914960375023 -b 28 -l 0.5708912660500872 
+2018-07-19 17:23:28,936 INFO     [root/vw-hyperopt:296]: loss value: -0.514936
+2018-07-19 17:23:28,983 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:10:11.986000
+2018-07-19 17:23:29,196 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 17:23:29,196 INFO     [hyperopt.tpe/tpe:842]: TPE using 13/13 trials with best loss -0.586878
+2018-07-19 17:23:29,200 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.14
+2018-07-19 17:23:29,200 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --l1 8.449499375057239e-07 --loss_function logistic --ngram c3 --passes 6 --power_t 0.8619916323737731 -b 28 -l 0.0190951916679849 
+2018-07-19 17:26:46,379 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:26:58,021 INFO     [root/vw-hyperopt:295]: parameter suffix: --l1 8.449499375057239e-07 --loss_function logistic --ngram c3 --passes 6 --power_t 0.8619916323737731 -b 28 -l 0.0190951916679849 
+2018-07-19 17:26:58,021 INFO     [root/vw-hyperopt:296]: loss value: -0.501843
+2018-07-19 17:26:58,067 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:28.867000
+2018-07-19 17:26:58,135 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 17:26:58,135 INFO     [hyperopt.tpe/tpe:842]: TPE using 14/14 trials with best loss -0.586878
+2018-07-19 17:26:58,139 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.15
+2018-07-19 17:26:58,139 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --l2 4.6402931377979654e-06 --loss_function logistic --ngram c2 --passes 8 --power_t 0.48331135141088544 -b 28 -l 0.6511858672311172 
+2018-07-19 17:31:23,498 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:31:36,144 INFO     [root/vw-hyperopt:295]: parameter suffix: --l2 4.6402931377979654e-06 --loss_function logistic --ngram c2 --passes 8 --power_t 0.48331135141088544 -b 28 -l 0.6511858672311172 
+2018-07-19 17:31:36,144 INFO     [root/vw-hyperopt:296]: loss value: -0.534986
+2018-07-19 17:31:36,191 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:38.052000
+2018-07-19 17:31:36,267 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 17:31:36,267 INFO     [hyperopt.tpe/tpe:842]: TPE using 15/15 trials with best loss -0.586878
+2018-07-19 17:31:36,271 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.16
+2018-07-19 17:31:36,271 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.5 --decay_learning_rate 0.97 --l1 7.055282328884895e-06 --loss_function logistic --ngram c3 --passes 5 --power_t 0.07176746477740147 -b 28 -l 0.03862244948351416 
+2018-07-19 17:34:20,701 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:34:33,017 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.5 --decay_learning_rate 0.97 --l1 7.055282328884895e-06 --loss_function logistic --ngram c3 --passes 5 --power_t 0.07176746477740147 -b 28 -l 0.03862244948351416 
+2018-07-19 17:34:33,017 INFO     [root/vw-hyperopt:296]: loss value: -0.534059
+2018-07-19 17:34:33,063 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:56.792000
+2018-07-19 17:34:33,131 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 17:34:33,132 INFO     [hyperopt.tpe/tpe:842]: TPE using 16/16 trials with best loss -0.586878
+2018-07-19 17:34:33,135 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.17
+2018-07-19 17:34:33,136 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.5 --loss_function logistic --ngram c4 --passes 9 --power_t 0.949850065543957 -b 28 -l 0.9154397596307277 
+2018-07-19 17:37:11,754 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:37:24,522 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.5 --loss_function logistic --ngram c4 --passes 9 --power_t 0.949850065543957 -b 28 -l 0.9154397596307277 
+2018-07-19 17:37:24,522 INFO     [root/vw-hyperopt:296]: loss value: -0.519728
+2018-07-19 17:37:24,570 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:51.434000
+2018-07-19 17:37:24,612 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 17:37:24,612 INFO     [hyperopt.tpe/tpe:842]: TPE using 17/17 trials with best loss -0.586878
+2018-07-19 17:37:24,616 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.18
+2018-07-19 17:37:24,616 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --ftrl_alpha 0.041639964868060264 --ftrl_beta 0.1681284994010946 --loss_function logistic --ngram c2 --passes 6 --power_t 0.8537016132279989 -b 28 -l 0.2549047879787487 --ftrl
+2018-07-19 17:39:09,520 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:39:22,199 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --ftrl_alpha 0.041639964868060264 --ftrl_beta 0.1681284994010946 --loss_function logistic --ngram c2 --passes 6 --power_t 0.8537016132279989 -b 28 -l 0.2549047879787487 --ftrl
+2018-07-19 17:39:22,199 INFO     [root/vw-hyperopt:296]: loss value: -0.561012
+2018-07-19 17:39:22,247 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:01:57.631000
+2018-07-19 17:39:22,313 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 17:39:22,313 INFO     [hyperopt.tpe/tpe:842]: TPE using 18/18 trials with best loss -0.586878
+2018-07-19 17:39:22,317 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.19
+2018-07-19 17:39:22,317 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --loss_function logistic --ngram c4 --passes 4 --power_t 0.6276451108245144 -b 28 -l 0.24053288672430323 
+2018-07-19 17:41:30,187 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:41:42,852 INFO     [root/vw-hyperopt:295]: parameter suffix: --loss_function logistic --ngram c4 --passes 4 --power_t 0.6276451108245144 -b 28 -l 0.24053288672430323 
+2018-07-19 17:41:42,852 INFO     [root/vw-hyperopt:296]: loss value: -0.551610
+2018-07-19 17:41:42,900 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:20.583000
+2018-07-19 17:41:42,938 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 17:41:42,938 INFO     [hyperopt.tpe/tpe:842]: TPE using 19/19 trials with best loss -0.586878
+2018-07-19 17:41:42,942 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.20
+2018-07-19 17:41:42,942 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.1 --decay_learning_rate 0.97 --ftrl_alpha 0.08318320418603552 --ftrl_beta 0.28460336913806034 --l1 3.72632294925409e-07 --l2 2.087464513560191e-06 --loss_function logistic --ngram c3 --passes 4 --power_t 0.7925417556353701 -b 28 -l 0.7799229530729391 --ftrl
+2018-07-19 17:42:57,887 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:43:11,270 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.1 --decay_learning_rate 0.97 --ftrl_alpha 0.08318320418603552 --ftrl_beta 0.28460336913806034 --l1 3.72632294925409e-07 --l2 2.087464513560191e-06 --loss_function logistic --ngram c3 --passes 4 --power_t 0.7925417556353701 -b 28 -l 0.7799229530729391 --ftrl
+2018-07-19 17:43:11,270 INFO     [root/vw-hyperopt:296]: loss value: -0.559044
+2018-07-19 17:43:11,318 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:01:28.376000
+2018-07-19 17:43:11,397 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 17:43:11,398 INFO     [hyperopt.tpe/tpe:842]: TPE using 20/20 trials with best loss -0.586878
+2018-07-19 17:43:11,415 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.21
+2018-07-19 17:43:11,416 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --ftrl_alpha 6.176657162741166e-05 --ftrl_beta 0.9469754750385859 --loss_function logistic --ngram c2 --passes 5 --power_t 0.5072387098134955 -b 28 -l 0.07162653595490462 --ftrl
+2018-07-19 17:44:54,118 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:45:06,796 INFO     [root/vw-hyperopt:295]: parameter suffix: --ftrl_alpha 6.176657162741166e-05 --ftrl_beta 0.9469754750385859 --loss_function logistic --ngram c2 --passes 5 --power_t 0.5072387098134955 -b 28 -l 0.07162653595490462 --ftrl
+2018-07-19 17:45:06,796 INFO     [root/vw-hyperopt:296]: loss value: -0.508069
+2018-07-19 17:45:06,845 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:01:55.430000
+2018-07-19 17:45:06,882 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 17:45:06,882 INFO     [hyperopt.tpe/tpe:842]: TPE using 21/21 trials with best loss -0.586878
+2018-07-19 17:45:06,899 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.22
+2018-07-19 17:45:06,900 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --ftrl_alpha 0.001675173409353584 --ftrl_beta 0.03821970706571509 --loss_function logistic --ngram c2 --passes 10 --power_t 0.992906799867689 -b 28 -l 0.0801968256434008 --ftrl
+2018-07-19 17:48:20,791 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:48:33,502 INFO     [root/vw-hyperopt:295]: parameter suffix: --ftrl_alpha 0.001675173409353584 --ftrl_beta 0.03821970706571509 --loss_function logistic --ngram c2 --passes 10 --power_t 0.992906799867689 -b 28 -l 0.0801968256434008 --ftrl
+2018-07-19 17:48:33,503 INFO     [root/vw-hyperopt:296]: loss value: -0.564863
+2018-07-19 17:48:33,551 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:26.651000
+2018-07-19 17:48:33,628 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 17:48:33,629 INFO     [hyperopt.tpe/tpe:842]: TPE using 22/22 trials with best loss -0.586878
+2018-07-19 17:48:33,646 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.23
+2018-07-19 17:48:33,646 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --ftrl_alpha 5.451602753333493e-05 --ftrl_beta 0.8113774705873762 --loss_function logistic --ngram c3 --passes 9 --power_t 0.5533630713882781 -b 28 -l 0.8613181811935814 --ftrl
+2018-07-19 17:51:36,212 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:51:50,933 INFO     [root/vw-hyperopt:295]: parameter suffix: --ftrl_alpha 5.451602753333493e-05 --ftrl_beta 0.8113774705873762 --loss_function logistic --ngram c3 --passes 9 --power_t 0.5533630713882781 -b 28 -l 0.8613181811935814 --ftrl
+2018-07-19 17:51:50,934 INFO     [root/vw-hyperopt:296]: loss value: -0.509139
+2018-07-19 17:51:50,981 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:17.335000
+2018-07-19 17:51:51,052 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 17:51:51,052 INFO     [hyperopt.tpe/tpe:842]: TPE using 23/23 trials with best loss -0.586878
+2018-07-19 17:51:51,070 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.24
+2018-07-19 17:51:51,070 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --ftrl_alpha 0.731656742503798 --ftrl_beta 0.6779802417247555 --loss_function logistic --ngram c2 --passes 3 --power_t 0.6572823356480731 -b 28 -l 0.04500444510146222 --ftrl
+2018-07-19 17:52:58,966 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:53:12,013 INFO     [root/vw-hyperopt:295]: parameter suffix: --ftrl_alpha 0.731656742503798 --ftrl_beta 0.6779802417247555 --loss_function logistic --ngram c2 --passes 3 --power_t 0.6572823356480731 -b 28 -l 0.04500444510146222 --ftrl
+2018-07-19 17:53:12,014 INFO     [root/vw-hyperopt:296]: loss value: -0.537304
+2018-07-19 17:53:12,062 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:01:20.992000
+2018-07-19 17:53:12,095 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 17:53:12,095 INFO     [hyperopt.tpe/tpe:842]: TPE using 24/24 trials with best loss -0.586878
+2018-07-19 17:53:12,112 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.25
+2018-07-19 17:53:12,113 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --ftrl_alpha 0.005766601975709161 --ftrl_beta 0.034560515236045725 --loss_function logistic --ngram c2 --passes 6 --power_t 0.9923174396516481 -b 28 -l 0.24092615319954455 --ftrl
+2018-07-19 17:55:03,048 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:55:16,033 INFO     [root/vw-hyperopt:295]: parameter suffix: --ftrl_alpha 0.005766601975709161 --ftrl_beta 0.034560515236045725 --loss_function logistic --ngram c2 --passes 6 --power_t 0.9923174396516481 -b 28 -l 0.24092615319954455 --ftrl
+2018-07-19 17:55:16,033 INFO     [root/vw-hyperopt:296]: loss value: -0.572875
+2018-07-19 17:55:16,080 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:03.968000
+2018-07-19 17:55:16,207 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.050000 seconds
+2018-07-19 17:55:16,207 INFO     [hyperopt.tpe/tpe:842]: TPE using 25/25 trials with best loss -0.586878
+2018-07-19 17:55:16,225 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.26
+2018-07-19 17:55:16,225 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.5 --ftrl_alpha 0.010770800881443426 --ftrl_beta 0.0407042942486861 --loss_function logistic --ngram c3 --passes 7 --power_t 0.31922100463371794 -b 28 -l 0.5373812540177513 --ftrl
+2018-07-19 17:57:28,096 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 17:57:40,928 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.5 --ftrl_alpha 0.010770800881443426 --ftrl_beta 0.0407042942486861 --loss_function logistic --ngram c3 --passes 7 --power_t 0.31922100463371794 -b 28 -l 0.5373812540177513 --ftrl
+2018-07-19 17:57:40,928 INFO     [root/vw-hyperopt:296]: loss value: -0.572086
+2018-07-19 17:57:40,976 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:24.751000
+2018-07-19 17:57:41,044 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 17:57:41,045 INFO     [hyperopt.tpe/tpe:842]: TPE using 26/26 trials with best loss -0.586878
+2018-07-19 17:57:41,063 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.27
+2018-07-19 17:57:41,063 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --ftrl_alpha 0.00026814837810447287 --ftrl_beta 0.014895100263117182 --loss_function logistic --ngram c2 --passes 10 --power_t 0.6803645900768598 -b 28 -l 0.03201118151087164 --ftrl
+2018-07-19 18:01:07,350 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 18:01:20,012 INFO     [root/vw-hyperopt:295]: parameter suffix: --ftrl_alpha 0.00026814837810447287 --ftrl_beta 0.014895100263117182 --loss_function logistic --ngram c2 --passes 10 --power_t 0.6803645900768598 -b 28 -l 0.03201118151087164 --ftrl
+2018-07-19 18:01:20,013 INFO     [root/vw-hyperopt:296]: loss value: -0.535803
+2018-07-19 18:01:20,060 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:38.997000
+2018-07-19 18:01:20,098 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 18:01:20,098 INFO     [hyperopt.tpe/tpe:842]: TPE using 27/27 trials with best loss -0.586878
+2018-07-19 18:01:20,116 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.28
+2018-07-19 18:01:20,116 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 7 --power_t 0.3159023938177484 -b 28 -l 0.011653792539396177 
+2018-07-19 18:05:15,689 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 18:05:28,335 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 7 --power_t 0.3159023938177484 -b 28 -l 0.011653792539396177 
+2018-07-19 18:05:28,335 INFO     [root/vw-hyperopt:296]: loss value: -0.585512
+2018-07-19 18:05:28,383 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:08.267000
+2018-07-19 18:05:28,453 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 18:05:28,454 INFO     [hyperopt.tpe/tpe:842]: TPE using 28/28 trials with best loss -0.586878
+2018-07-19 18:05:28,470 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.29
+2018-07-19 18:05:28,471 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 7 --power_t 0.37393048431081194 -b 28 -l 0.011172265182211451 
+2018-07-19 18:09:08,784 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 18:09:21,384 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 7 --power_t 0.37393048431081194 -b 28 -l 0.011172265182211451 
+2018-07-19 18:09:21,384 INFO     [root/vw-hyperopt:296]: loss value: -0.584201
+2018-07-19 18:09:21,431 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:52.961000
+2018-07-19 18:09:21,908 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.016000 seconds
+2018-07-19 18:09:21,908 INFO     [hyperopt.tpe/tpe:842]: TPE using 29/29 trials with best loss -0.586878
+2018-07-19 18:09:21,925 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.30
+2018-07-19 18:09:21,926 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 7 --power_t 0.29180043279288975 -b 28 -l 0.023935865127994706 
+2018-07-19 18:13:03,459 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 18:13:16,176 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 7 --power_t 0.29180043279288975 -b 28 -l 0.023935865127994706 
+2018-07-19 18:13:16,176 INFO     [root/vw-hyperopt:296]: loss value: -0.588228
+2018-07-19 18:13:16,224 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:54.299000
+2018-07-19 18:13:16,293 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 18:13:16,293 INFO     [hyperopt.tpe/tpe:842]: TPE using 30/30 trials with best loss -0.588228
+2018-07-19 18:13:16,310 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.31
+2018-07-19 18:13:16,311 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.2898575684379044 -b 28 -l 0.02924828895162649 
+2018-07-19 18:17:26,378 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 18:17:39,007 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.2898575684379044 -b 28 -l 0.02924828895162649 
+2018-07-19 18:17:39,007 INFO     [root/vw-hyperopt:296]: loss value: -0.588152
+2018-07-19 18:17:39,054 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:22.744000
+2018-07-19 18:17:39,129 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 18:17:39,129 INFO     [hyperopt.tpe/tpe:842]: TPE using 31/31 trials with best loss -0.588228
+2018-07-19 18:17:39,146 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.32
+2018-07-19 18:17:39,147 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.23939335878883466 -b 28 -l 0.06577192765503319 
+2018-07-19 18:21:53,623 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 18:22:06,277 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.23939335878883466 -b 28 -l 0.06577192765503319 
+2018-07-19 18:22:06,277 INFO     [root/vw-hyperopt:296]: loss value: -0.584180
+2018-07-19 18:22:06,324 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:27.178000
+2018-07-19 18:22:06,362 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 18:22:06,362 INFO     [hyperopt.tpe/tpe:842]: TPE using 32/32 trials with best loss -0.588228
+2018-07-19 18:22:06,380 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.33
+2018-07-19 18:22:06,380 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.21846519028073763 -b 28 -l 0.02203702669188238 
+2018-07-19 18:26:19,646 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 18:26:33,167 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.21846519028073763 -b 28 -l 0.02203702669188238 
+2018-07-19 18:26:33,167 INFO     [root/vw-hyperopt:296]: loss value: -0.588495
+2018-07-19 18:26:33,215 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:26.835000
+2018-07-19 18:26:33,585 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.031000 seconds
+2018-07-19 18:26:33,585 INFO     [hyperopt.tpe/tpe:842]: TPE using 33/33 trials with best loss -0.588495
+2018-07-19 18:26:33,602 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.34
+2018-07-19 18:26:33,603 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 9 --power_t 0.20476209324788347 -b 28 -l 0.018642027897230323 
+2018-07-19 18:31:17,735 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 18:31:30,314 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 9 --power_t 0.20476209324788347 -b 28 -l 0.018642027897230323 
+2018-07-19 18:31:30,314 INFO     [root/vw-hyperopt:296]: loss value: -0.588474
+2018-07-19 18:31:30,361 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:56.759000
+2018-07-19 18:31:30,431 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 18:31:30,432 INFO     [hyperopt.tpe/tpe:842]: TPE using 34/34 trials with best loss -0.588495
+2018-07-19 18:31:30,449 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.35
+2018-07-19 18:31:30,450 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 10 --power_t 0.1831849568384751 -b 28 -l 0.01634983545699013 
+2018-07-19 18:36:45,318 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 18:36:57,862 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 10 --power_t 0.1831849568384751 -b 28 -l 0.01634983545699013 
+2018-07-19 18:36:57,862 INFO     [root/vw-hyperopt:296]: loss value: -0.588457
+2018-07-19 18:36:57,909 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:27.460000
+2018-07-19 18:36:57,982 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 18:36:57,982 INFO     [hyperopt.tpe/tpe:842]: TPE using 35/35 trials with best loss -0.588495
+2018-07-19 18:36:58,000 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.36
+2018-07-19 18:36:58,000 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.1 --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 9 --power_t 0.18738754707984845 -b 28 -l 0.051547486180887774 
+2018-07-19 18:41:42,053 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 18:41:54,778 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.1 --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 9 --power_t 0.18738754707984845 -b 28 -l 0.051547486180887774 
+2018-07-19 18:41:54,779 INFO     [root/vw-hyperopt:296]: loss value: -0.587161
+2018-07-19 18:41:54,826 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:56.826000
+2018-07-19 18:41:54,896 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 18:41:54,897 INFO     [hyperopt.tpe/tpe:842]: TPE using 36/36 trials with best loss -0.588495
+2018-07-19 18:41:54,914 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.37
+2018-07-19 18:41:54,915 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c2 --passes 9 --power_t 0.013967036223819562 -b 28 -l 0.11477418736463273 
+2018-07-19 18:46:36,849 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 18:46:49,558 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c2 --passes 9 --power_t 0.013967036223819562 -b 28 -l 0.11477418736463273 
+2018-07-19 18:46:49,559 INFO     [root/vw-hyperopt:296]: loss value: -0.576798
+2018-07-19 18:46:49,606 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:54.692000
+2018-07-19 18:46:49,683 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 18:46:49,683 INFO     [hyperopt.tpe/tpe:842]: TPE using 37/37 trials with best loss -0.588495
+2018-07-19 18:46:49,743 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.38
+2018-07-19 18:46:49,743 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 10 --power_t 0.4429926152839122 -b 28 -l 0.11123923643275216 
+2018-07-19 18:52:01,385 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 18:52:14,058 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 10 --power_t 0.4429926152839122 -b 28 -l 0.11123923643275216 
+2018-07-19 18:52:14,058 INFO     [root/vw-hyperopt:296]: loss value: -0.572591
+2018-07-19 18:52:14,106 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:24.363000
+2018-07-19 18:52:14,183 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 18:52:14,183 INFO     [hyperopt.tpe/tpe:842]: TPE using 38/38 trials with best loss -0.588495
+2018-07-19 18:52:14,201 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.39
+2018-07-19 18:52:14,202 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.025285905757748917 -b 28 -l 0.014900097451349247 
+2018-07-19 18:56:26,841 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 18:56:39,485 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.025285905757748917 -b 28 -l 0.014900097451349247 
+2018-07-19 18:56:39,486 INFO     [root/vw-hyperopt:296]: loss value: -0.588148
+2018-07-19 18:56:39,533 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:25.332000
+2018-07-19 18:56:39,735 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 18:56:39,735 INFO     [hyperopt.tpe/tpe:842]: TPE using 39/39 trials with best loss -0.588495
+2018-07-19 18:56:39,753 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.40
+2018-07-19 18:56:39,754 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.02 --decay_learning_rate 0.97 --l2 1.0251029225077212e-08 --loss_function logistic --ngram c3 --passes 9 --power_t 0.1898101360497031 -b 28 -l 0.040075736506296894 
+2018-07-19 19:01:32,149 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 19:01:44,912 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.02 --decay_learning_rate 0.97 --l2 1.0251029225077212e-08 --loss_function logistic --ngram c3 --passes 9 --power_t 0.1898101360497031 -b 28 -l 0.040075736506296894 
+2018-07-19 19:01:44,912 INFO     [root/vw-hyperopt:296]: loss value: -0.585054
+2018-07-19 19:01:44,959 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:05.206000
+2018-07-19 19:01:45,036 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 19:01:45,036 INFO     [hyperopt.tpe/tpe:842]: TPE using 40/40 trials with best loss -0.588495
+2018-07-19 19:01:45,054 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.41
+2018-07-19 19:01:45,055 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c2 --passes 8 --power_t 0.3494693967985095 -b 28 -l 0.08065250371674984 
+2018-07-19 19:05:54,872 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 19:06:07,644 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c2 --passes 8 --power_t 0.3494693967985095 -b 28 -l 0.08065250371674984 
+2018-07-19 19:06:07,645 INFO     [root/vw-hyperopt:296]: loss value: -0.581187
+2018-07-19 19:06:07,692 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:22.638000
+2018-07-19 19:06:07,772 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 19:06:07,772 INFO     [hyperopt.tpe/tpe:842]: TPE using 41/41 trials with best loss -0.588495
+2018-07-19 19:06:07,790 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.42
+2018-07-19 19:06:07,791 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 10 --power_t 0.24095213922984413 -b 28 -l 0.021387359069161088 
+2018-07-19 19:11:18,735 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 19:11:31,275 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 10 --power_t 0.24095213922984413 -b 28 -l 0.021387359069161088 
+2018-07-19 19:11:31,276 INFO     [root/vw-hyperopt:296]: loss value: -0.588484
+2018-07-19 19:11:31,323 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:23.533000
+2018-07-19 19:11:31,399 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 19:11:31,399 INFO     [hyperopt.tpe/tpe:842]: TPE using 42/42 trials with best loss -0.588495
+2018-07-19 19:11:31,418 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.43
+2018-07-19 19:11:31,418 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 10 --power_t 0.12384017359384285 -b 28 -l 0.04064835509392274 
+2018-07-19 19:16:49,303 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 19:17:02,874 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 10 --power_t 0.12384017359384285 -b 28 -l 0.04064835509392274 
+2018-07-19 19:17:02,875 INFO     [root/vw-hyperopt:296]: loss value: -0.586256
+2018-07-19 19:17:02,923 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:31.505000
+2018-07-19 19:17:02,998 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 19:17:02,999 INFO     [hyperopt.tpe/tpe:842]: TPE using 43/43 trials with best loss -0.588495
+2018-07-19 19:17:03,017 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.44
+2018-07-19 19:17:03,017 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.2 --decay_learning_rate 0.95 --l2 1.4730825958632005e-08 --loss_function logistic --ngram c3 --passes 10 --power_t 0.7437644360873538 -b 28 -l 0.024614418872495724 
+2018-07-19 19:22:25,387 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 19:22:39,267 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.2 --decay_learning_rate 0.95 --l2 1.4730825958632005e-08 --loss_function logistic --ngram c3 --passes 10 --power_t 0.7437644360873538 -b 28 -l 0.024614418872495724 
+2018-07-19 19:22:39,267 INFO     [root/vw-hyperopt:296]: loss value: -0.548056
+2018-07-19 19:22:39,315 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:36.298000
+2018-07-19 19:22:39,433 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 19:22:39,433 INFO     [hyperopt.tpe/tpe:842]: TPE using 44/44 trials with best loss -0.588495
+2018-07-19 19:22:39,452 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.45
+2018-07-19 19:22:39,452 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --loss_function logistic --ngram c2 --passes 3 --power_t 0.2546919269269427 -b 28 -l 0.1573842376213395 
+2018-07-19 19:24:16,362 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 19:24:29,528 INFO     [root/vw-hyperopt:295]: parameter suffix: --loss_function logistic --ngram c2 --passes 3 --power_t 0.2546919269269427 -b 28 -l 0.1573842376213395 
+2018-07-19 19:24:29,528 INFO     [root/vw-hyperopt:296]: loss value: -0.582912
+2018-07-19 19:24:29,575 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:01:50.123000
+2018-07-19 19:24:29,609 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 19:24:29,610 INFO     [hyperopt.tpe/tpe:842]: TPE using 45/45 trials with best loss -0.588495
+2018-07-19 19:24:29,628 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.46
+2018-07-19 19:24:29,629 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 7 --power_t 0.45782731396534365 -b 28 -l 0.06561437025094013 
+2018-07-19 19:28:08,795 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 19:28:22,478 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 7 --power_t 0.45782731396534365 -b 28 -l 0.06561437025094013 
+2018-07-19 19:28:22,479 INFO     [root/vw-hyperopt:296]: loss value: -0.580725
+2018-07-19 19:28:22,526 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:52.897000
+2018-07-19 19:28:22,630 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 19:28:22,630 INFO     [hyperopt.tpe/tpe:842]: TPE using 46/46 trials with best loss -0.588495
+2018-07-19 19:28:22,649 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.47
+2018-07-19 19:28:22,650 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --l1 1.056357283113821e-08 --l2 8.54589373885923e-07 --loss_function logistic --ngram c4 --passes 8 --power_t 0.40929951488308197 -b 28 -l 0.02957224772736366 
+2018-07-19 19:33:05,181 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 19:33:17,766 INFO     [root/vw-hyperopt:295]: parameter suffix: --l1 1.056357283113821e-08 --l2 8.54589373885923e-07 --loss_function logistic --ngram c4 --passes 8 --power_t 0.40929951488308197 -b 28 -l 0.02957224772736366 
+2018-07-19 19:33:17,767 INFO     [root/vw-hyperopt:296]: loss value: -0.561426
+2018-07-19 19:33:17,814 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:55.165000
+2018-07-19 19:33:17,893 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 19:33:17,893 INFO     [hyperopt.tpe/tpe:842]: TPE using 47/47 trials with best loss -0.588495
+2018-07-19 19:33:17,912 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.48
+2018-07-19 19:33:17,912 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.2 --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 10 --power_t 0.05652234736937908 -b 28 -l 0.012527003024277061 
+2018-07-19 19:38:31,330 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 19:38:44,409 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.2 --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 10 --power_t 0.05652234736937908 -b 28 -l 0.012527003024277061 
+2018-07-19 19:38:44,410 INFO     [root/vw-hyperopt:296]: loss value: -0.587771
+2018-07-19 19:38:44,457 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:26.545000
+2018-07-19 19:38:44,526 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 19:38:44,526 INFO     [hyperopt.tpe/tpe:842]: TPE using 48/48 trials with best loss -0.588495
+2018-07-19 19:38:44,545 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.49
+2018-07-19 19:38:44,546 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --l1 9.166041281490713e-08 --loss_function logistic --ngram c2 --passes 6 --power_t 0.35512074495164847 -b 28 -l 0.3616954716511731 
+2018-07-19 19:41:58,080 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 19:42:10,592 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --l1 9.166041281490713e-08 --loss_function logistic --ngram c2 --passes 6 --power_t 0.35512074495164847 -b 28 -l 0.3616954716511731 
+2018-07-19 19:42:10,592 INFO     [root/vw-hyperopt:296]: loss value: -0.536811
+2018-07-19 19:42:10,638 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:26.093000
+2018-07-19 19:42:10,830 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 19:42:10,830 INFO     [hyperopt.tpe/tpe:842]: TPE using 49/49 trials with best loss -0.588495
+2018-07-19 19:42:10,891 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.50
+2018-07-19 19:42:10,891 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --l2 1.3614101155902418e-07 --loss_function logistic --ngram c4 --passes 3 --power_t 0.5189989697934595 -b 28 -l 0.01000975030037332 
+2018-07-19 19:43:50,451 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 19:44:03,212 INFO     [root/vw-hyperopt:295]: parameter suffix: --l2 1.3614101155902418e-07 --loss_function logistic --ngram c4 --passes 3 --power_t 0.5189989697934595 -b 28 -l 0.01000975030037332 
+2018-07-19 19:44:03,212 INFO     [root/vw-hyperopt:296]: loss value: -0.553241
+2018-07-19 19:44:03,259 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:01:52.368000
+2018-07-19 19:44:03,324 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 19:44:03,324 INFO     [hyperopt.tpe/tpe:842]: TPE using 50/50 trials with best loss -0.588495
+2018-07-19 19:44:03,344 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.51
+2018-07-19 19:44:03,344 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.02 --decay_learning_rate 0.95 --l1 0.0002586802278751734 --loss_function logistic --ngram c3 --passes 9 --power_t 0.12898862229790714 -b 28 -l 0.04716163067776662 
+2018-07-19 19:49:03,612 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 19:49:15,667 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.02 --decay_learning_rate 0.95 --l1 0.0002586802278751734 --loss_function logistic --ngram c3 --passes 9 --power_t 0.12898862229790714 -b 28 -l 0.04716163067776662 
+2018-07-19 19:49:15,667 INFO     [root/vw-hyperopt:296]: loss value: -0.500000
+2018-07-19 19:49:15,713 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:12.369000
+2018-07-19 19:49:15,796 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 19:49:15,796 INFO     [hyperopt.tpe/tpe:842]: TPE using 51/51 trials with best loss -0.588495
+2018-07-19 19:49:15,815 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.52
+2018-07-19 19:49:15,816 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --l2 3.349224486273001e-05 --loss_function logistic --ngram c4 --passes 7 --power_t 0.7217465125760774 -b 28 -l 0.15558763697478797 
+2018-07-19 19:53:06,894 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 19:53:19,564 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --l2 3.349224486273001e-05 --loss_function logistic --ngram c4 --passes 7 --power_t 0.7217465125760774 -b 28 -l 0.15558763697478797 
+2018-07-19 19:53:19,565 INFO     [root/vw-hyperopt:296]: loss value: -0.511753
+2018-07-19 19:53:19,611 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:03.796000
+2018-07-19 19:53:19,681 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 19:53:19,681 INFO     [hyperopt.tpe/tpe:842]: TPE using 52/52 trials with best loss -0.588495
+2018-07-19 19:53:19,700 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.53
+2018-07-19 19:53:19,700 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --l1 0.007160739465582116 --loss_function logistic --ngram c3 --passes 10 --power_t 0.5634931901814855 -b 28 -l 0.020913071720757105 
+2018-07-19 19:58:41,921 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 19:58:53,973 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --l1 0.007160739465582116 --loss_function logistic --ngram c3 --passes 10 --power_t 0.5634931901814855 -b 28 -l 0.020913071720757105 
+2018-07-19 19:58:53,973 INFO     [root/vw-hyperopt:296]: loss value: -0.500000
+2018-07-19 19:58:54,019 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:34.319000
+2018-07-19 19:58:54,089 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 19:58:54,090 INFO     [hyperopt.tpe/tpe:842]: TPE using 53/53 trials with best loss -0.588495
+2018-07-19 19:58:54,110 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.54
+2018-07-19 19:58:54,110 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.05 --decay_learning_rate 0.95 --ftrl_alpha 0.7754703938035725 --ftrl_beta 0.9978658045419979 --l1 0.009787491041646865 --l2 3.71478553930924e-08 --loss_function logistic --ngram c3 --passes 9 --power_t 0.06779429657848607 -b 28 -l 0.0123685090575097 --ftrl
+2018-07-19 20:01:32,249 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:01:45,106 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.05 --decay_learning_rate 0.95 --ftrl_alpha 0.7754703938035725 --ftrl_beta 0.9978658045419979 --l1 0.009787491041646865 --l2 3.71478553930924e-08 --loss_function logistic --ngram c3 --passes 9 --power_t 0.06779429657848607 -b 28 -l 0.0123685090575097 --ftrl
+2018-07-19 20:01:45,106 INFO     [root/vw-hyperopt:296]: loss value: -0.543433
+2018-07-19 20:01:45,153 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:51.043000
+2018-07-19 20:01:45,222 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 20:01:45,222 INFO     [hyperopt.tpe/tpe:842]: TPE using 54/54 trials with best loss -0.588495
+2018-07-19 20:01:45,241 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.55
+2018-07-19 20:01:45,241 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --loss_function logistic --ngram c2 --passes 6 --power_t 0.3957582867671214 -b 28 -l 0.033936618321343585 
+2018-07-19 20:04:54,939 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:05:07,553 INFO     [root/vw-hyperopt:295]: parameter suffix: --loss_function logistic --ngram c2 --passes 6 --power_t 0.3957582867671214 -b 28 -l 0.033936618321343585 
+2018-07-19 20:05:07,553 INFO     [root/vw-hyperopt:296]: loss value: -0.586818
+2018-07-19 20:05:07,601 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:22.360000
+2018-07-19 20:05:07,679 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 20:05:07,680 INFO     [hyperopt.tpe/tpe:842]: TPE using 55/55 trials with best loss -0.588495
+2018-07-19 20:05:07,700 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.56
+2018-07-19 20:05:07,700 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.2 --decay_learning_rate 0.97 --ftrl_alpha 0.15443268478009956 --ftrl_beta 0.8554965309231739 --l1 4.5154852292759305e-05 --l2 0.007124958503574454 --loss_function logistic --ngram c4 --passes 8 --power_t 0.21528697891099258 -b 28 -l 0.16563380442838613 --ftrl
+2018-07-19 20:07:31,664 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:07:44,503 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.2 --decay_learning_rate 0.97 --ftrl_alpha 0.15443268478009956 --ftrl_beta 0.8554965309231739 --l1 4.5154852292759305e-05 --l2 0.007124958503574454 --loss_function logistic --ngram c4 --passes 8 --power_t 0.21528697891099258 -b 28 -l 0.16563380442838613 --ftrl
+2018-07-19 20:07:44,503 INFO     [root/vw-hyperopt:296]: loss value: -0.552839
+2018-07-19 20:07:44,550 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:36.850000
+2018-07-19 20:07:44,589 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 20:07:44,589 INFO     [hyperopt.tpe/tpe:842]: TPE using 56/56 trials with best loss -0.588495
+2018-07-19 20:07:44,609 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.57
+2018-07-19 20:07:44,610 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.05 --decay_learning_rate 0.95 --l1 1.9376950875434463e-07 --l2 1.4575214437395283e-07 --loss_function logistic --ngram c3 --passes 5 --power_t 0.9988452674933799 -b 28 -l 0.09142194255663456 
+2018-07-19 20:10:15,918 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:10:28,238 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.05 --decay_learning_rate 0.95 --l1 1.9376950875434463e-07 --l2 1.4575214437395283e-07 --loss_function logistic --ngram c3 --passes 5 --power_t 0.9988452674933799 -b 28 -l 0.09142194255663456 
+2018-07-19 20:10:28,238 INFO     [root/vw-hyperopt:296]: loss value: -0.513243
+2018-07-19 20:10:28,285 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:43.676000
+2018-07-19 20:10:28,360 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 20:10:28,361 INFO     [hyperopt.tpe/tpe:842]: TPE using 57/57 trials with best loss -0.588495
+2018-07-19 20:10:28,380 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.58
+2018-07-19 20:10:28,380 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --loss_function logistic --ngram c4 --passes 8 --power_t 0.24434885616854482 -b 28 -l 0.013962818425046286 
+2018-07-19 20:14:37,816 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:14:50,631 INFO     [root/vw-hyperopt:295]: parameter suffix: --loss_function logistic --ngram c4 --passes 8 --power_t 0.24434885616854482 -b 28 -l 0.013962818425046286 
+2018-07-19 20:14:50,631 INFO     [root/vw-hyperopt:296]: loss value: -0.587757
+2018-07-19 20:14:50,678 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:22.298000
+2018-07-19 20:14:50,756 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 20:14:50,756 INFO     [hyperopt.tpe/tpe:842]: TPE using 58/58 trials with best loss -0.588495
+2018-07-19 20:14:50,776 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.59
+2018-07-19 20:14:50,777 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.02 --decay_learning_rate 0.95 --ftrl_alpha 0.00018254738060266738 --ftrl_beta 0.7303441417049671 --l1 7.702067776817233e-06 --l2 3.1468485169487825e-08 --loss_function logistic --ngram c3 --passes 5 --power_t 0.3685911762022702 -b 28 -l 0.01017718111432984 --ftrl
+2018-07-19 20:16:35,088 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:16:47,713 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.02 --decay_learning_rate 0.95 --ftrl_alpha 0.00018254738060266738 --ftrl_beta 0.7303441417049671 --l1 7.702067776817233e-06 --l2 3.1468485169487825e-08 --loss_function logistic --ngram c3 --passes 5 --power_t 0.3685911762022702 -b 28 -l 0.01017718111432984 --ftrl
+2018-07-19 20:16:47,713 INFO     [root/vw-hyperopt:296]: loss value: -0.535284
+2018-07-19 20:16:47,760 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:01:56.984000
+2018-07-19 20:16:47,845 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 20:16:47,846 INFO     [hyperopt.tpe/tpe:842]: TPE using 59/59 trials with best loss -0.588495
+2018-07-19 20:16:47,865 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.60
+2018-07-19 20:16:47,865 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 9 --power_t 0.09628001425940946 -b 28 -l 0.05652000685736093 
+2018-07-19 20:21:29,912 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:21:42,515 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 9 --power_t 0.09628001425940946 -b 28 -l 0.05652000685736093 
+2018-07-19 20:21:42,515 INFO     [root/vw-hyperopt:296]: loss value: -0.584497
+2018-07-19 20:21:42,563 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:54.698000
+2018-07-19 20:21:42,643 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 20:21:42,643 INFO     [hyperopt.tpe/tpe:842]: TPE using 60/60 trials with best loss -0.588495
+2018-07-19 20:21:42,664 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.61
+2018-07-19 20:21:42,664 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --l1 0.007534940806083406 --loss_function logistic --ngram c3 --passes 6 --power_t 0.1591119193909727 -b 28 -l 0.021833448681936412 
+2018-07-19 20:24:57,752 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:25:11,259 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --l1 0.007534940806083406 --loss_function logistic --ngram c3 --passes 6 --power_t 0.1591119193909727 -b 28 -l 0.021833448681936412 
+2018-07-19 20:25:11,260 INFO     [root/vw-hyperopt:296]: loss value: -0.500000
+2018-07-19 20:25:11,306 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:28.642000
+2018-07-19 20:25:11,378 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 20:25:11,379 INFO     [hyperopt.tpe/tpe:842]: TPE using 61/61 trials with best loss -0.588495
+2018-07-19 20:25:11,400 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.62
+2018-07-19 20:25:11,400 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.05 --decay_learning_rate 0.97 --ftrl_alpha 0.001872155087451052 --ftrl_beta 0.4054045419565156 --l1 0.00023930199952916487 --l2 0.009380928295247282 --loss_function logistic --ngram c4 --passes 9 --power_t 0.6810215204406462 -b 28 -l 0.045617031436817085 --ftrl
+2018-07-19 20:28:15,566 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:28:28,279 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.05 --decay_learning_rate 0.97 --ftrl_alpha 0.001872155087451052 --ftrl_beta 0.4054045419565156 --l1 0.00023930199952916487 --l2 0.009380928295247282 --loss_function logistic --ngram c4 --passes 9 --power_t 0.6810215204406462 -b 28 -l 0.045617031436817085 --ftrl
+2018-07-19 20:28:28,280 INFO     [root/vw-hyperopt:296]: loss value: -0.587045
+2018-07-19 20:28:28,326 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:16.926000
+2018-07-19 20:28:28,729 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.050000 seconds
+2018-07-19 20:28:28,729 INFO     [hyperopt.tpe/tpe:842]: TPE using 62/62 trials with best loss -0.588495
+2018-07-19 20:28:28,748 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.63
+2018-07-19 20:28:28,749 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.1 --l2 0.009317216454642913 --loss_function logistic --ngram c2 --passes 4 --power_t 0.3158498090487026 -b 28 -l 0.030762464106896807 
+2018-07-19 20:31:14,086 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:31:26,846 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.1 --l2 0.009317216454642913 --loss_function logistic --ngram c2 --passes 4 --power_t 0.3158498090487026 -b 28 -l 0.030762464106896807 
+2018-07-19 20:31:26,846 INFO     [root/vw-hyperopt:296]: loss value: -0.529911
+2018-07-19 20:31:26,893 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:58.145000
+2018-07-19 20:31:26,973 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 20:31:26,974 INFO     [hyperopt.tpe/tpe:842]: TPE using 63/63 trials with best loss -0.588495
+2018-07-19 20:31:26,993 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.64
+2018-07-19 20:31:26,993 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --loss_function logistic --ngram c4 --passes 5 --power_t 0.6293320558404352 -b 28 -l 0.01759084281417116 
+2018-07-19 20:34:05,811 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:34:18,906 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --loss_function logistic --ngram c4 --passes 5 --power_t 0.6293320558404352 -b 28 -l 0.01759084281417116 
+2018-07-19 20:34:18,906 INFO     [root/vw-hyperopt:296]: loss value: -0.556344
+2018-07-19 20:34:18,954 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:51.961000
+2018-07-19 20:34:19,024 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 20:34:19,024 INFO     [hyperopt.tpe/tpe:842]: TPE using 64/64 trials with best loss -0.588495
+2018-07-19 20:34:19,045 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.65
+2018-07-19 20:34:19,045 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.5 --decay_learning_rate 0.95 --ftrl_alpha 0.015313255386311045 --ftrl_beta 0.6057921391790789 --l1 7.810513850675035e-07 --l2 2.335806506856591e-07 --loss_function logistic --ngram c3 --passes 5 --power_t 0.18586125511992435 -b 28 -l 0.47133378791671754 --ftrl
+2018-07-19 20:35:56,179 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:36:08,768 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.5 --decay_learning_rate 0.95 --ftrl_alpha 0.015313255386311045 --ftrl_beta 0.6057921391790789 --l1 7.810513850675035e-07 --l2 2.335806506856591e-07 --loss_function logistic --ngram c3 --passes 5 --power_t 0.18586125511992435 -b 28 -l 0.47133378791671754 --ftrl
+2018-07-19 20:36:08,769 INFO     [root/vw-hyperopt:296]: loss value: -0.571640
+2018-07-19 20:36:08,816 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:01:49.771000
+2018-07-19 20:36:08,850 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 20:36:08,851 INFO     [hyperopt.tpe/tpe:842]: TPE using 65/65 trials with best loss -0.588495
+2018-07-19 20:36:08,870 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.66
+2018-07-19 20:36:08,870 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 9 --power_t 0.24177372561159216 -b 28 -l 0.01736863256959812 
+2018-07-19 20:41:00,432 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:41:13,236 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 9 --power_t 0.24177372561159216 -b 28 -l 0.01736863256959812 
+2018-07-19 20:41:13,237 INFO     [root/vw-hyperopt:296]: loss value: -0.588282
+2018-07-19 20:41:13,283 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:04.413000
+2018-07-19 20:41:13,489 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 20:41:13,490 INFO     [hyperopt.tpe/tpe:842]: TPE using 66/66 trials with best loss -0.588495
+2018-07-19 20:41:13,509 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.67
+2018-07-19 20:41:13,509 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 10 --power_t 0.03953835434363273 -b 28 -l 0.010592679405592758 
+2018-07-19 20:46:24,771 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:46:37,499 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 10 --power_t 0.03953835434363273 -b 28 -l 0.010592679405592758 
+2018-07-19 20:46:37,500 INFO     [root/vw-hyperopt:296]: loss value: -0.587897
+2018-07-19 20:46:37,546 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:24.037000
+2018-07-19 20:46:37,621 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 20:46:37,621 INFO     [hyperopt.tpe/tpe:842]: TPE using 67/67 trials with best loss -0.588495
+2018-07-19 20:46:37,640 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.68
+2018-07-19 20:46:37,641 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 9 --power_t 0.20149680553430757 -b 28 -l 0.025062418570621903 
+2018-07-19 20:51:40,334 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:51:52,941 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 9 --power_t 0.20149680553430757 -b 28 -l 0.025062418570621903 
+2018-07-19 20:51:52,941 INFO     [root/vw-hyperopt:296]: loss value: -0.588381
+2018-07-19 20:51:52,988 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:15.348000
+2018-07-19 20:51:53,065 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 20:51:53,065 INFO     [hyperopt.tpe/tpe:842]: TPE using 68/68 trials with best loss -0.588495
+2018-07-19 20:51:53,085 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.69
+2018-07-19 20:51:53,085 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.08514936136793526 -b 28 -l 0.014157515277616219 
+2018-07-19 20:56:05,934 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 20:56:18,577 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.08514936136793526 -b 28 -l 0.014157515277616219 
+2018-07-19 20:56:18,578 INFO     [root/vw-hyperopt:296]: loss value: -0.588001
+2018-07-19 20:56:18,624 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:25.539000
+2018-07-19 20:56:18,703 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 20:56:18,703 INFO     [hyperopt.tpe/tpe:842]: TPE using 69/69 trials with best loss -0.588495
+2018-07-19 20:56:18,723 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.70
+2018-07-19 20:56:18,723 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 9 --power_t 0.30739938391747074 -b 28 -l 0.034908859376280264 
+2018-07-19 21:01:02,673 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 21:01:15,333 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 9 --power_t 0.30739938391747074 -b 28 -l 0.034908859376280264 
+2018-07-19 21:01:15,333 INFO     [root/vw-hyperopt:296]: loss value: -0.587344
+2018-07-19 21:01:15,379 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:56.656000
+2018-07-19 21:01:15,453 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 21:01:15,454 INFO     [hyperopt.tpe/tpe:842]: TPE using 70/70 trials with best loss -0.588495
+2018-07-19 21:01:15,474 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.71
+2018-07-19 21:01:15,474 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 10 --power_t 0.14497596988811998 -b 28 -l 0.019657191516105843 
+2018-07-19 21:06:28,146 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 21:06:41,067 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 10 --power_t 0.14497596988811998 -b 28 -l 0.019657191516105843 
+2018-07-19 21:06:41,067 INFO     [root/vw-hyperopt:296]: loss value: -0.588409
+2018-07-19 21:06:41,114 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:25.640000
+2018-07-19 21:06:41,189 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 21:06:41,189 INFO     [hyperopt.tpe/tpe:842]: TPE using 71/71 trials with best loss -0.588495
+2018-07-19 21:06:41,209 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.72
+2018-07-19 21:06:41,209 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 7 --power_t 0.4930582524015735 -b 28 -l 0.04531829038751307 
+2018-07-19 21:10:35,505 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 21:10:48,289 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 7 --power_t 0.4930582524015735 -b 28 -l 0.04531829038751307 
+2018-07-19 21:10:48,289 INFO     [root/vw-hyperopt:296]: loss value: -0.581809
+2018-07-19 21:10:48,336 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:07.127000
+2018-07-19 21:10:48,407 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 21:10:48,408 INFO     [hyperopt.tpe/tpe:842]: TPE using 72/72 trials with best loss -0.588495
+2018-07-19 21:10:48,429 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.73
+2018-07-19 21:10:48,429 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.2791246814939323 -b 28 -l 0.012425548441977644 
+2018-07-19 21:15:03,246 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 21:15:16,155 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.2791246814939323 -b 28 -l 0.012425548441977644 
+2018-07-19 21:15:16,155 INFO     [root/vw-hyperopt:296]: loss value: -0.586687
+2018-07-19 21:15:16,202 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:27.773000
+2018-07-19 21:15:16,287 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 21:15:16,287 INFO     [hyperopt.tpe/tpe:842]: TPE using 73/73 trials with best loss -0.588495
+2018-07-19 21:15:16,307 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.74
+2018-07-19 21:15:16,308 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 9 --power_t 0.20814146307347117 -b 28 -l 0.024091422515916092 
+2018-07-19 21:19:58,411 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 21:20:11,418 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 9 --power_t 0.20814146307347117 -b 28 -l 0.024091422515916092 
+2018-07-19 21:20:11,419 INFO     [root/vw-hyperopt:296]: loss value: -0.588444
+2018-07-19 21:20:11,465 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:55.158000
+2018-07-19 21:20:11,576 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.050000 seconds
+2018-07-19 21:20:11,577 INFO     [hyperopt.tpe/tpe:842]: TPE using 74/74 trials with best loss -0.588495
+2018-07-19 21:20:11,597 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.75
+2018-07-19 21:20:11,597 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 10 --power_t 0.43416292050510996 -b 28 -l 0.08476941509897436 
+2018-07-19 21:25:28,347 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 21:25:44,330 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 10 --power_t 0.43416292050510996 -b 28 -l 0.08476941509897436 
+2018-07-19 21:25:44,330 INFO     [root/vw-hyperopt:296]: loss value: -0.576432
+2018-07-19 21:25:44,376 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:32.779000
+2018-07-19 21:25:44,447 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 21:25:44,447 INFO     [hyperopt.tpe/tpe:842]: TPE using 75/75 trials with best loss -0.588495
+2018-07-19 21:25:44,467 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.76
+2018-07-19 21:25:44,467 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 7 --power_t 0.3478605041737807 -b 28 -l 0.015979426544082253 
+2018-07-19 21:29:24,895 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 21:29:37,634 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 7 --power_t 0.3478605041737807 -b 28 -l 0.015979426544082253 
+2018-07-19 21:29:37,635 INFO     [root/vw-hyperopt:296]: loss value: -0.586492
+2018-07-19 21:29:37,681 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:53.214000
+2018-07-19 21:29:38,052 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 21:29:38,053 INFO     [hyperopt.tpe/tpe:842]: TPE using 76/76 trials with best loss -0.588495
+2018-07-19 21:29:38,073 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.77
+2018-07-19 21:29:38,074 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.15923635009010725 -b 28 -l 0.7485630313065545 
+2018-07-19 21:33:51,135 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 21:34:03,801 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.15923635009010725 -b 28 -l 0.7485630313065545 
+2018-07-19 21:34:03,802 INFO     [root/vw-hyperopt:296]: loss value: -0.559069
+2018-07-19 21:34:03,849 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:25.776000
+2018-07-19 21:34:03,920 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 21:34:03,920 INFO     [hyperopt.tpe/tpe:842]: TPE using 77/77 trials with best loss -0.588495
+2018-07-19 21:34:03,941 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.78
+2018-07-19 21:34:03,941 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.05 --decay_learning_rate 0.97 --l1 0.00016072488332563074 --loss_function logistic --ngram c2 --passes 9 --power_t 0.8665622435720766 -b 28 -l 0.05676260418977031 
+2018-07-19 21:39:18,253 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 21:39:30,049 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.05 --decay_learning_rate 0.97 --l1 0.00016072488332563074 --loss_function logistic --ngram c2 --passes 9 --power_t 0.8665622435720766 -b 28 -l 0.05676260418977031 
+2018-07-19 21:39:30,049 INFO     [root/vw-hyperopt:296]: loss value: -0.500005
+2018-07-19 21:39:30,094 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:26.153000
+2018-07-19 21:39:30,166 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 21:39:30,167 INFO     [hyperopt.tpe/tpe:842]: TPE using 78/78 trials with best loss -0.588495
+2018-07-19 21:39:30,187 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.79
+2018-07-19 21:39:30,187 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --l2 3.173625402423554e-05 --loss_function logistic --ngram c3 --passes 8 --power_t 0.5487661994982259 -b 28 -l 0.0733261255228021 
+2018-07-19 21:43:55,592 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 21:44:08,253 INFO     [root/vw-hyperopt:295]: parameter suffix: --l2 3.173625402423554e-05 --loss_function logistic --ngram c3 --passes 8 --power_t 0.5487661994982259 -b 28 -l 0.0733261255228021 
+2018-07-19 21:44:08,253 INFO     [root/vw-hyperopt:296]: loss value: -0.524372
+2018-07-19 21:44:08,301 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:38.114000
+2018-07-19 21:44:08,371 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 21:44:08,372 INFO     [hyperopt.tpe/tpe:842]: TPE using 79/79 trials with best loss -0.588495
+2018-07-19 21:44:08,392 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.80
+2018-07-19 21:44:08,393 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.2 --ftrl_alpha 9.941677082367569e-05 --ftrl_beta 0.13183137651266663 --l1 4.618675555711119e-06 --l2 0.0010712069514469923 --loss_function logistic --ngram c4 --passes 4 --power_t 0.020318534306259017 -b 28 -l 0.13287191701091658 --ftrl
+2018-07-19 21:45:31,606 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 21:45:44,312 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.2 --ftrl_alpha 9.941677082367569e-05 --ftrl_beta 0.13183137651266663 --l1 4.618675555711119e-06 --l2 0.0010712069514469923 --loss_function logistic --ngram c4 --passes 4 --power_t 0.020318534306259017 -b 28 -l 0.13287191701091658 --ftrl
+2018-07-19 21:45:44,313 INFO     [root/vw-hyperopt:296]: loss value: -0.528837
+2018-07-19 21:45:44,359 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:01:35.967000
+2018-07-19 21:45:44,430 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 21:45:44,430 INFO     [hyperopt.tpe/tpe:842]: TPE using 80/80 trials with best loss -0.588495
+2018-07-19 21:45:44,450 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.81
+2018-07-19 21:45:44,450 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c4 --passes 10 --power_t 0.26442577496346165 -b 28 -l 0.035012977001781555 
+2018-07-19 21:50:58,942 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 21:51:11,685 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c4 --passes 10 --power_t 0.26442577496346165 -b 28 -l 0.035012977001781555 
+2018-07-19 21:51:11,685 INFO     [root/vw-hyperopt:296]: loss value: -0.587227
+2018-07-19 21:51:11,732 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:27.282000
+2018-07-19 21:51:11,807 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 21:51:11,807 INFO     [hyperopt.tpe/tpe:842]: TPE using 81/81 trials with best loss -0.588495
+2018-07-19 21:51:11,828 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.82
+2018-07-19 21:51:11,828 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 10 --power_t 0.38013760536080476 -b 28 -l 0.027436203451276252 
+2018-07-19 21:56:28,046 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 21:56:40,652 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 10 --power_t 0.38013760536080476 -b 28 -l 0.027436203451276252 
+2018-07-19 21:56:40,653 INFO     [root/vw-hyperopt:296]: loss value: -0.587279
+2018-07-19 21:56:40,700 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:28.872000
+2018-07-19 21:56:40,773 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 21:56:40,773 INFO     [hyperopt.tpe/tpe:842]: TPE using 82/82 trials with best loss -0.588495
+2018-07-19 21:56:40,794 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.83
+2018-07-19 21:56:40,795 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 9 --power_t 0.06353187699332313 -b 28 -l 0.35193295581889106 
+2018-07-19 22:01:25,338 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 22:01:51,378 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 9 --power_t 0.06353187699332313 -b 28 -l 0.35193295581889106 
+2018-07-19 22:01:51,378 INFO     [root/vw-hyperopt:296]: loss value: -0.565858
+2018-07-19 22:01:51,425 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:10.631000
+2018-07-19 22:01:51,504 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 22:01:51,504 INFO     [hyperopt.tpe/tpe:842]: TPE using 83/83 trials with best loss -0.588495
+2018-07-19 22:01:51,525 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.84
+2018-07-19 22:01:51,526 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.2 --decay_learning_rate 0.97 --l1 4.7564355452834075e-06 --loss_function logistic --ngram c2 --passes 7 --power_t 0.016383692747511502 -b 28 -l 0.0187578624064178 
+2018-07-19 22:05:42,699 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 22:05:55,239 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.2 --decay_learning_rate 0.97 --l1 4.7564355452834075e-06 --loss_function logistic --ngram c2 --passes 7 --power_t 0.016383692747511502 -b 28 -l 0.0187578624064178 
+2018-07-19 22:05:55,239 INFO     [root/vw-hyperopt:296]: loss value: -0.534059
+2018-07-19 22:05:55,285 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:03.760000
+2018-07-19 22:05:55,363 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.008000 seconds
+2018-07-19 22:05:55,363 INFO     [hyperopt.tpe/tpe:842]: TPE using 84/84 trials with best loss -0.588495
+2018-07-19 22:05:55,384 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.85
+2018-07-19 22:05:55,384 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.2 --ftrl_alpha 0.3171205996841974 --ftrl_beta 0.9212627909856936 --l2 5.218499879787796e-07 --loss_function logistic --ngram c3 --passes 7 --power_t 0.5843825520680324 -b 28 -l 0.027508867413001906 --ftrl
+2018-07-19 22:07:59,759 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 22:08:12,470 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.2 --ftrl_alpha 0.3171205996841974 --ftrl_beta 0.9212627909856936 --l2 5.218499879787796e-07 --loss_function logistic --ngram c3 --passes 7 --power_t 0.5843825520680324 -b 28 -l 0.027508867413001906 --ftrl
+2018-07-19 22:08:12,470 INFO     [root/vw-hyperopt:296]: loss value: -0.547732
+2018-07-19 22:08:12,517 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:17.133000
+2018-07-19 22:08:12,695 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.014000 seconds
+2018-07-19 22:08:12,695 INFO     [hyperopt.tpe/tpe:842]: TPE using 85/85 trials with best loss -0.588495
+2018-07-19 22:08:12,716 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.86
+2018-07-19 22:08:12,716 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --l2 1.684340440928963e-06 --loss_function logistic --ngram c3 --passes 9 --power_t 0.21939521328450046 -b 28 -l 0.12996433545507266 
+2018-07-19 22:13:06,368 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 22:13:19,015 INFO     [root/vw-hyperopt:295]: parameter suffix: --l2 1.684340440928963e-06 --loss_function logistic --ngram c3 --passes 9 --power_t 0.21939521328450046 -b 28 -l 0.12996433545507266 
+2018-07-19 22:13:19,015 INFO     [root/vw-hyperopt:296]: loss value: -0.580480
+2018-07-19 22:13:19,061 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:06.345000
+2018-07-19 22:13:19,188 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.050000 seconds
+2018-07-19 22:13:19,188 INFO     [hyperopt.tpe/tpe:842]: TPE using 86/86 trials with best loss -0.588495
+2018-07-19 22:13:19,209 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.87
+2018-07-19 22:13:19,209 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 10 --power_t 0.10860148061149276 -b 28 -l 0.012403098950277372 
+2018-07-19 22:18:32,763 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 22:18:45,340 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 10 --power_t 0.10860148061149276 -b 28 -l 0.012403098950277372 
+2018-07-19 22:18:45,340 INFO     [root/vw-hyperopt:296]: loss value: -0.587947
+2018-07-19 22:18:45,386 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:26.177000
+2018-07-19 22:18:45,463 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 22:18:45,463 INFO     [hyperopt.tpe/tpe:842]: TPE using 87/87 trials with best loss -0.588495
+2018-07-19 22:18:45,484 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.88
+2018-07-19 22:18:45,484 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c4 --passes 8 --power_t 0.457161176175725 -b 28 -l 0.045167336472782864 
+2018-07-19 22:22:58,035 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 22:23:12,444 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c4 --passes 8 --power_t 0.457161176175725 -b 28 -l 0.045167336472782864 
+2018-07-19 22:23:12,444 INFO     [root/vw-hyperopt:296]: loss value: -0.583126
+2018-07-19 22:23:12,514 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:27.030000
+2018-07-19 22:23:12,587 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 22:23:12,588 INFO     [hyperopt.tpe/tpe:842]: TPE using 88/88 trials with best loss -0.588495
+2018-07-19 22:23:12,609 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.89
+2018-07-19 22:23:12,609 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.1 --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.34165539411950446 -b 28 -l 0.2219391493041879 
+2018-07-19 22:27:43,195 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 22:27:55,840 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.1 --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.34165539411950446 -b 28 -l 0.2219391493041879 
+2018-07-19 22:27:55,840 INFO     [root/vw-hyperopt:296]: loss value: -0.574970
+2018-07-19 22:27:55,888 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:43.280000
+2018-07-19 22:27:55,970 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 22:27:55,970 INFO     [hyperopt.tpe/tpe:842]: TPE using 89/89 trials with best loss -0.588495
+2018-07-19 22:27:55,992 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.90
+2018-07-19 22:27:55,992 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --ftrl_alpha 0.0013708196576513087 --ftrl_beta 0.37972416623527516 --l1 0.008942146382366949 --loss_function logistic --ngram c4 --passes 8 --power_t 0.28087111563214573 -b 28 -l 0.0922579362915561 --ftrl
+2018-07-19 22:30:41,536 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 22:30:54,341 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --ftrl_alpha 0.0013708196576513087 --ftrl_beta 0.37972416623527516 --l1 0.008942146382366949 --loss_function logistic --ngram c4 --passes 8 --power_t 0.28087111563214573 -b 28 -l 0.0922579362915561 --ftrl
+2018-07-19 22:30:54,341 INFO     [root/vw-hyperopt:296]: loss value: -0.563514
+2018-07-19 22:30:54,388 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:58.396000
+2018-07-19 22:30:54,468 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 22:30:54,468 INFO     [hyperopt.tpe/tpe:842]: TPE using 90/90 trials with best loss -0.588495
+2018-07-19 22:30:54,490 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.91
+2018-07-19 22:30:54,490 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --l1 1.6710017998807092e-07 --l2 6.989679230659089e-08 --loss_function logistic --ngram c3 --passes 7 --power_t 0.28059868831155504 -b 28 -l 0.0560122935075826 
+2018-07-19 22:34:47,962 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 22:35:00,175 INFO     [root/vw-hyperopt:295]: parameter suffix: --l1 1.6710017998807092e-07 --l2 6.989679230659089e-08 --loss_function logistic --ngram c3 --passes 7 --power_t 0.28059868831155504 -b 28 -l 0.0560122935075826 
+2018-07-19 22:35:00,175 INFO     [root/vw-hyperopt:296]: loss value: -0.534457
+2018-07-19 22:35:00,220 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:05.730000
+2018-07-19 22:35:00,295 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 22:35:00,296 INFO     [hyperopt.tpe/tpe:842]: TPE using 91/91 trials with best loss -0.588495
+2018-07-19 22:35:00,318 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.92
+2018-07-19 22:35:00,318 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --loss_function logistic --ngram c2 --passes 9 --power_t 0.4188257664044106 -b 28 -l 0.011012523045104897 
+2018-07-19 22:39:41,108 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 22:39:53,693 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --loss_function logistic --ngram c2 --passes 9 --power_t 0.4188257664044106 -b 28 -l 0.011012523045104897 
+2018-07-19 22:39:53,693 INFO     [root/vw-hyperopt:296]: loss value: -0.581519
+2018-07-19 22:39:53,739 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:53.421000
+2018-07-19 22:39:53,808 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.010000 seconds
+2018-07-19 22:39:53,808 INFO     [hyperopt.tpe/tpe:842]: TPE using 92/92 trials with best loss -0.588495
+2018-07-19 22:39:53,830 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.93
+2018-07-19 22:39:53,830 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 10 --power_t 0.5918750152539038 -b 28 -l 0.021352788658365894 
+2018-07-19 22:45:10,517 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 22:45:23,059 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 10 --power_t 0.5918750152539038 -b 28 -l 0.021352788658365894 
+2018-07-19 22:45:23,059 INFO     [root/vw-hyperopt:296]: loss value: -0.569125
+2018-07-19 22:45:23,105 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:29.275000
+2018-07-19 22:45:23,148 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 22:45:23,149 INFO     [hyperopt.tpe/tpe:842]: TPE using 93/93 trials with best loss -0.588495
+2018-07-19 22:45:23,171 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.94
+2018-07-19 22:45:23,172 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --ftrl_alpha 0.05317310857441863 --ftrl_beta 0.7530902424172148 --l1 0.00044735977325157365 --l2 0.00018679054532353537 --loss_function logistic --ngram c4 --passes 6 --power_t 0.43719027984742387 -b 28 -l 0.04923834162529151 --ftrl
+2018-07-19 22:47:17,948 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 22:47:30,975 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --ftrl_alpha 0.05317310857441863 --ftrl_beta 0.7530902424172148 --l1 0.00044735977325157365 --l2 0.00018679054532353537 --loss_function logistic --ngram c4 --passes 6 --power_t 0.43719027984742387 -b 28 -l 0.04923834162529151 --ftrl
+2018-07-19 22:47:30,975 INFO     [root/vw-hyperopt:296]: loss value: -0.560508
+2018-07-19 22:47:31,022 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:02:07.851000
+2018-07-19 22:47:31,059 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 22:47:31,059 INFO     [hyperopt.tpe/tpe:842]: TPE using 94/94 trials with best loss -0.588495
+2018-07-19 22:47:31,080 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.95
+2018-07-19 22:47:31,081 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.02 --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 8 --power_t 0.17494702622018643 -b 28 -l 0.015042003339244683 
+2018-07-19 22:51:40,782 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 22:51:53,521 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.02 --decay_learning_rate 0.95 --loss_function logistic --ngram c3 --passes 8 --power_t 0.17494702622018643 -b 28 -l 0.015042003339244683 
+2018-07-19 22:51:53,521 INFO     [root/vw-hyperopt:296]: loss value: -0.574629
+2018-07-19 22:51:53,567 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:22.487000
+2018-07-19 22:51:53,640 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 22:51:53,640 INFO     [hyperopt.tpe/tpe:842]: TPE using 95/95 trials with best loss -0.588495
+2018-07-19 22:51:53,662 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.96
+2018-07-19 22:51:53,663 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --l1 0.001063410556094464 --l2 0.0001009024603828359 --loss_function logistic --ngram c4 --passes 9 --power_t 0.22215570667856216 -b 28 -l 0.0284513067777258 
+2018-07-19 22:57:04,064 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 22:57:16,377 INFO     [root/vw-hyperopt:295]: parameter suffix: --l1 0.001063410556094464 --l2 0.0001009024603828359 --loss_function logistic --ngram c4 --passes 9 --power_t 0.22215570667856216 -b 28 -l 0.0284513067777258 
+2018-07-19 22:57:16,377 INFO     [root/vw-hyperopt:296]: loss value: -0.534059
+2018-07-19 22:57:16,422 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:22.760000
+2018-07-19 22:57:16,623 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 22:57:16,624 INFO     [hyperopt.tpe/tpe:842]: TPE using 96/96 trials with best loss -0.588495
+2018-07-19 22:57:16,645 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.97
+2018-07-19 22:57:16,646 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 10 --power_t 0.5176222342797485 -b 28 -l 0.038935874434232715 
+2018-07-19 23:02:31,937 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 23:02:44,553 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 10 --power_t 0.5176222342797485 -b 28 -l 0.038935874434232715 
+2018-07-19 23:02:44,553 INFO     [root/vw-hyperopt:296]: loss value: -0.579704
+2018-07-19 23:02:44,600 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:05:27.955000
+2018-07-19 23:02:46,705 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 23:02:46,706 INFO     [hyperopt.tpe/tpe:842]: TPE using 97/97 trials with best loss -0.588495
+2018-07-19 23:02:46,727 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.98
+2018-07-19 23:02:46,727 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.95 --loss_function logistic --ngram c2 --passes 9 --power_t 0.12789330631442553 -b 28 -l 0.10105285647063288 
+2018-07-19 23:07:31,015 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 23:07:43,693 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.95 --loss_function logistic --ngram c2 --passes 9 --power_t 0.12789330631442553 -b 28 -l 0.10105285647063288 
+2018-07-19 23:07:43,693 INFO     [root/vw-hyperopt:296]: loss value: -0.579948
+2018-07-19 23:07:43,740 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:57.013000
+2018-07-19 23:07:44,139 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.050000 seconds
+2018-07-19 23:07:44,139 INFO     [hyperopt.tpe/tpe:842]: TPE using 98/98 trials with best loss -0.588495
+2018-07-19 23:07:44,160 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.99
+2018-07-19 23:07:44,160 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --classweight -1:0.02 --ftrl_alpha 0.0005825460708619398 --ftrl_beta 0.6247557485582909 --loss_function logistic --ngram c3 --passes 10 --power_t 0.11996892765908096 -b 28 -l 0.49908429492819784 --ftrl
+2018-07-19 23:11:23,711 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 23:11:36,388 INFO     [root/vw-hyperopt:295]: parameter suffix: --classweight -1:0.02 --ftrl_alpha 0.0005825460708619398 --ftrl_beta 0.6247557485582909 --loss_function logistic --ngram c3 --passes 10 --power_t 0.11996892765908096 -b 28 -l 0.49908429492819784 --ftrl
+2018-07-19 23:11:36,388 INFO     [root/vw-hyperopt:296]: loss value: -0.558462
+2018-07-19 23:11:36,433 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:03:52.273000
+2018-07-19 23:11:36,521 INFO     [hyperopt.tpe/tpe:814]: tpe_transform took 0.009000 seconds
+2018-07-19 23:11:36,522 INFO     [hyperopt.tpe/tpe:842]: TPE using 99/99 trials with best loss -0.588495
+2018-07-19 23:11:36,543 INFO     [root/vw-hyperopt:305]: 
+
+Starting trial no.100
+2018-07-19 23:11:36,544 INFO     [root/vw-hyperopt:240]: executing the following command (training): vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 7 --power_t 0.6576607150610057 -b 28 -l 0.03141670959514401 
+2018-07-19 23:15:27,163 INFO     [root/vw-hyperopt:245]: executing the following command (validation): vw -t -d ..\\vw\\dataset_valid_shuffled.vw -i ./dataset_train_shuffled_current.model -p ./dataset_train_shuffled_holdout.pred --holdout_off -c
+2018-07-19 23:15:39,833 INFO     [root/vw-hyperopt:295]: parameter suffix: --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 7 --power_t 0.6576607150610057 -b 28 -l 0.03141670959514401 
+2018-07-19 23:15:39,833 INFO     [root/vw-hyperopt:296]: loss value: -0.561114
+2018-07-19 23:15:39,880 INFO     [root/vw-hyperopt:313]: evaluation time for this step: 0:04:03.337000
+2018-07-19 23:15:39,940 DEBUG    [root/vw-hyperopt:336]: the best hyperopt parameters: {'algorithm': 1, 'sgd_b': 0, 'sgd_classweight_outer': 0, 'sgd_decay_learning_rate': 1, 'sgd_decay_learning_rate_outer': 1, 'sgd_l': 0.02203702669188238, 'sgd_l1_outer': 0, 'sgd_l2_outer': 0, 'sgd_loss_function': 0, 'sgd_ngram': 1, 'sgd_passes': 8.0, 'sgd_power_t': 0.21846519028073763}
+2018-07-19 23:15:39,959 INFO     [root/vw-hyperopt:339]: All the trials results are saved at ./dataset_train_shuffled_trials.json
+2018-07-19 23:15:39,960 INFO     [root/vw-hyperopt:343]: 
+
+A full training command with the best hyperparameters: 
+vw -d ..\\vw\\dataset_train_shuffled.vw -f ./dataset_train_shuffled_current.model --holdout_off -c  --decay_learning_rate 0.97 --loss_function logistic --ngram c3 --passes 8 --power_t 0.21846519028073763 -b 28 -l 0.02203702669188238 
+
+
+2018-07-19 23:15:39,960 INFO     [root/vw-hyperopt:344]: 
+
+The best holdout loss value: 
+-0.588495297878427
+
+
+2018-07-19 23:15:39,961 DEBUG    [root/vw-hyperopt:355]: plotting...
+2018-07-19 23:15:40,767 DEBUG    [matplotlib.font_manager/font_manager:1343]: findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=16.0 to Arial ('c:\\windows\\fonts\\arial.ttf') with score of 0.050000
+2018-07-19 23:15:40,844 DEBUG    [matplotlib.font_manager/font_manager:1343]: findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to Arial ('c:\\windows\\fonts\\arial.ttf') with score of 0.050000
+2018-07-19 23:15:40,982 INFO     [root/vw-hyperopt:377]: The diagnostic hyperopt progress plot is saved: ./dataset_train_shuffled_hyperopt_progress.png
